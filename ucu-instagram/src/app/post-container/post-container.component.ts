@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PostsService } from '../posts.service';
+import { Post } from '../post';
 
 @Component({
   selector: 'app-post-container',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class PostContainerComponent {
 
+  posts: Post[] = [];
+
+  constructor(private postsService: PostsService) {
+    postsService.getAllPosts().then(posts => {
+      this.posts = posts;
+      console.log(this.posts);
+    })
+  }
 }

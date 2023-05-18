@@ -1,1 +1,7 @@
-<p>post-container works!</p>
+<div class="container-fluid row overflow-x-scroll">
+    <div *ngFor="let post of posts">
+        <div class="">
+            <app-post [post]="post"></app-post>
+        </div>
+    </div>
+</div>
