@@ -2,9 +2,42 @@ nav {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
-    background-color: blue;
     padding: 1em;
-    gap: 20px;
+    gap: 80px;
+
 }
 
-button {}
+#discover {
+    background: linear-gradient(202.17deg, #FF00D6 8.58%, #FF4D00 91.42%);
+    border-radius: 20px;
+    border: none;
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+#search {
+    border: none;
+    background-color: white;
+
+}
+
+#upload {
+    border: none;
+    background-color: white;
+}
+
+#chat {
+    border: none;
+    background-color: white;
+}
+
+#profile {
+    border: none;
+    background-color: white;
+}
