@@ -7,6 +7,7 @@ import { PostContainerComponent } from './post-container/post-container.componen
 import { PostComponent } from './post/post.component';
 import { MatIconModule } from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import { UploadComponent } from './upload/upload.component';
 
 
 
@@ -16,6 +17,7 @@ import {MatButtonModule} from '@angular/material/button';
     NavComponent,
     PostContainerComponent,
     PostComponent,
+    UploadComponent,
   ],
   imports: [
     BrowserModule,

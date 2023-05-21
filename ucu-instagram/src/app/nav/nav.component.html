@@ -5,6 +5,7 @@
   <button mat-button id="chat" [class]="selected === 'chat' ? 'selected' : ''" (click)="selected = 'chat' ">
     <mat-icon>chat_bubble_outline</mat-icon>Chat</button>
 
+
   <button mat-button id="upload" [class]="selected === 'upload' ? 'selected' : ''" [routerLink]="['/upload']"
     (click)="selected = 'upload' ">
     <mat-icon>add</mat-icon>Upload Picture</button>
