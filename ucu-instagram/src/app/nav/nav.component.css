@@ -7,7 +7,7 @@ nav {
 
 }
 
-#discover {
+.selected {
     background: linear-gradient(202.17deg, #FF00D6 8.58%, #FF4D00 91.42%);
     border-radius: 20px;
     border: none;
@@ -21,23 +21,7 @@ nav {
     color: #FFFFFF;
 }
 
-#search {
-    border: none;
-    background-color: white;
-
-}
-
-#upload {
-    border: none;
-    background-color: white;
-}
-
-#chat {
-    border: none;
-    background-color: white;
-}
-
-#profile {
+button {
     border: none;
     background-color: white;
 }
