@@ -8,6 +8,8 @@ import { PostComponent } from './post/post.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { UploadComponent } from './upload/upload.component';
+import { MAT_DIALOG_DEFAULT_OPTIONS } from "@angular/material/dialog";
+import {MatDialogModule} from "@angular/material/dialog";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from "@angular/material/card";
 
@@ -22,12 +24,15 @@ import { MatCardModule } from "@angular/material/card";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
     MatIconModule,
+    MatButtonModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
     MatCardModule,
-    MatButtonModule
   ],
-  providers: [],
+  providers: [
+    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

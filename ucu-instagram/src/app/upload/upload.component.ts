@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-upload',
@@ -6,8 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./upload.component.css']
 })
 export class UploadComponent {
-  myFunction(): void {
-    
+  constructor(private dialogRef: MatDialogRef<UploadComponent>,){
+
+  }
+  close(){
+    this.dialogRef.close();
   }
   
 }
