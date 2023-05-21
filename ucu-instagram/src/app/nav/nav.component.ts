@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Input } from '@angular/core';
+import { UploadComponent } from '../upload/upload.component';
+
 
 @Component({
   selector: 'app-nav',
@@ -7,4 +10,12 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
 
+  uploadComponent: UploadComponent;
+
+  constructor() {
+    this.uploadComponent = new UploadComponent();
+  }
+   
+
+@Input() selected! : "discover" | "search"  | "upload" | "chat" | "profile" ;
 }
