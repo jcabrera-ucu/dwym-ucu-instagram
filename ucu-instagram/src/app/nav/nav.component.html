@@ -12,7 +12,8 @@
   <button mat-button id="search" [class]="selected === 'search' ? 'selected' : ''" (click)="selected = 'search' ">
     <mat-icon>search</mat-icon>Search</button>
 
-  <button mat-button id="discover" [class]="selected === 'discover' ? 'selected' : ''" (click)="selected = 'discover' ">
+  <button mat-button id="discover" [class]="selected === 'discover' ? 'selected' : ''" [routerLink]="['/discover']"
+  (click)="selected = 'discover' ">
     <mat-icon>home</mat-icon>Discover</button>
 
 </nav>
