@@ -1,0 +1,18 @@
+mat-card {
+  box-shadow: none;
+}
+
+mat-card-header {
+  padding-left: 0;
+}
+
+mat-card-title {
+  padding-top: 5px !important;
+  font-weight: bold;
+  font-size: .75rem;
+}
+
+mat-card-subtitle {
+  padding-top: 5px !important;
+  font-size: .7rem;
+}

@@ -15,7 +15,7 @@ export class PostsService {
         user: {
           firstName: 'Juan',
           lastName: 'Cabrera',
-          profilePicture: '',
+          profilePicture: 'assets/juancho.jpg',
           handle: '@juancho',
         }
       },
@@ -24,7 +24,7 @@ export class PostsService {
         user: {
           firstName: 'Juan',
           lastName: 'Cabrera',
-          profilePicture: '',
+          profilePicture: 'assets/juancho.jpg',
           handle: '@juancho',
         }
       },
