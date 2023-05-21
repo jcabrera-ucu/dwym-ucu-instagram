@@ -18,10 +18,11 @@ nav {
     line-height: 16px;
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: white;
 }
 
 button {
     border: none;
-    background-color: white;
+    background-color: rgb(255, 252, 252);
+    border-radius: 20px;
 }
