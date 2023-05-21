@@ -18,10 +18,17 @@ nav {
     line-height: 16px;
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: white;
 }
 
 button {
     border: none;
     background-color: white;
+    border-radius: 20px;
+    box-shadow: none;
+    transition: box-shadow 0.3s
+}
+
+button:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
