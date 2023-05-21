@@ -8,8 +8,8 @@ import { PostComponent } from './post/post.component';
 import { MatIconModule } from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { UploadComponent } from './upload/upload.component';
-
-
+import { MAT_DIALOG_DEFAULT_OPTIONS } from "@angular/material/dialog";
+import {MatDialogModule} from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
@@ -23,9 +23,12 @@ import { UploadComponent } from './upload/upload.component';
     BrowserModule,
     AppRoutingModule,
    MatIconModule,
-   MatButtonModule
+   MatButtonModule,
+   MatDialogModule
   ],
-  providers: [],
+  providers: [
+    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
