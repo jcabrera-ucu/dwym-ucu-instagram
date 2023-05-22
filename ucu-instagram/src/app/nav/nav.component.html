@@ -1,19 +1,21 @@
 <nav>
-  <button mat-button id="profile" [class]="selected === 'profile' ? 'selected' : ''" (click)="selected = 'profile' ">
-    <mat-icon>person_outline</mat-icon>Profile</button>
+  <button mat-button id="profile" [class]="selected === 'profile' ? 'selected' : ''" (click)="navigate('profile')">
+    <mat-icon>person_outline</mat-icon>Profile
+  </button>
 
-  <button mat-button id="chat" [class]="selected === 'chat' ? 'selected' : ''" (click)="selected = 'chat' ">
-    <mat-icon>chat_bubble_outline</mat-icon>Chat</button>
+  <button mat-button id="chat" [class]="selected === 'chat' ? 'selected' : ''" (click)="navigate('chat')">
+    <mat-icon>chat_bubble_outline</mat-icon>Chat
+  </button>
 
-  <button mat-button id="upload" [class]="selected === 'upload' ? 'selected' : ''" [routerLink]="['/upload']"
-    (click)="selected = 'upload' ">
-    <mat-icon>add</mat-icon>Upload Picture</button>
+  <button mat-button id="upload" [class]="selected === 'upload' ? 'selected' : ''" (click)="upload()">
+    <mat-icon>add</mat-icon>Upload Picture
+  </button>
 
-  <button mat-button id="search" [class]="selected === 'search' ? 'selected' : ''" (click)="selected = 'search' ">
-    <mat-icon>search</mat-icon>Search</button>
+  <button mat-button id="search" [class]="selected === 'search' ? 'selected' : ''" (click)="navigate('search')">
+    <mat-icon>search</mat-icon>Search
+  </button>
 
-  <button mat-button id="discover" [class]="selected === 'discover' ? 'selected' : ''" [routerLink]="['/discover']"
-  (click)="selected = 'discover' ">
-    <mat-icon>home</mat-icon>Discover</button>
-
+  <button mat-button id="discover" [class]="selected === 'discover' ? 'selected' : ''" (click)="navigate('discover')">
+    <mat-icon>home</mat-icon>Discover
+  </button>
 </nav>

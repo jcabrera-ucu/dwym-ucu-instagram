@@ -1,8 +1,8 @@
-<div class="card border-0">
-    <img src="{{post.image}}" class="" alt="...">
-    <div class="card-body">
-      <!-- <h5 class="card-title">Card title</h5> -->
-      <p class="card-text">{{post.user.firstName}} {{post.user.lastName}}</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
+<mat-card>
+  <img mat-card-image [src]="post.image" [alt]="post.user.firstName + ' post'">
+  <mat-card-header>
+    <img mat-card-avatar [src]="post.user.profilePicture" [alt]="post.user.firstName + 'avatar'">
+    <mat-card-title>{{post.user.firstName}} {{post.user.lastName}}</mat-card-title>
+    <mat-card-subtitle>{{post.user.handle}}</mat-card-subtitle>
+  </mat-card-header>
+</mat-card>

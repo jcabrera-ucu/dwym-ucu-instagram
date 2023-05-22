@@ -6,11 +6,13 @@ import { NavComponent } from './nav/nav.component';
 import { PostContainerComponent } from './post-container/post-container.component';
 import { PostComponent } from './post/post.component';
 import { MatIconModule } from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { UploadComponent } from './upload/upload.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
-
-
+import { MAT_DIALOG_DEFAULT_OPTIONS } from "@angular/material/dialog";
+import {MatDialogModule} from "@angular/material/dialog";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -24,10 +26,16 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-   MatIconModule,
-   MatButtonModule
+    MatIconModule,
+    MatButtonModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+    MatCardModule,
   ],
-  providers: [],
+  providers: [
+    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
