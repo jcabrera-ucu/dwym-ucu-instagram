@@ -8,6 +8,7 @@ import { PostComponent } from './post/post.component';
 import { MatIconModule } from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { UploadComponent } from './upload/upload.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 
 
@@ -18,6 +19,7 @@ import { UploadComponent } from './upload/upload.component';
     PostContainerComponent,
     PostComponent,
     UploadComponent,
+    ProfilePageComponent,
   ],
   imports: [
     BrowserModule,
