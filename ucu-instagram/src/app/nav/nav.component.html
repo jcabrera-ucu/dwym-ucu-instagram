@@ -3,7 +3,7 @@
     <mat-icon>person_outline</mat-icon>Profile
   </button>
 
-  <button mat-button id="chat" [class]="selected === 'chat' ? 'selected' : ''" (click)="navigate('chat')">
+  <button mat-button id="chat" [class]="selected === 'chat' ? 'selected' : ''" (click)="toggleChat()">
     <mat-icon>chat_bubble_outline</mat-icon>Chat
   </button>
 
@@ -18,4 +18,5 @@
   <button mat-button id="discover" [class]="selected === 'discover' ? 'selected' : ''" (click)="navigate('discover')">
     <mat-icon>home</mat-icon>Discover
   </button>
+  <app-chat-overlay *ngIf="showChat"></app-chat-overlay>
 </nav>

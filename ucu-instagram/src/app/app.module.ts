@@ -12,6 +12,7 @@ import { MAT_DIALOG_DEFAULT_OPTIONS } from "@angular/material/dialog";
 import {MatDialogModule} from "@angular/material/dialog";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from "@angular/material/card";
+import { ChatOverlayComponent } from './chat-overlay/chat-overlay.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { MatCardModule } from "@angular/material/card";
     PostContainerComponent,
     PostComponent,
     UploadComponent,
+    ChatOverlayComponent,
   ],
   imports: [
     BrowserModule,
