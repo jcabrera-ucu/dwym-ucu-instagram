@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Post } from '../post';
 import { PostsService } from '../posts.service';
+import { NgFor } from '@angular/common';
 declare const $:any;
 
 @Component({
