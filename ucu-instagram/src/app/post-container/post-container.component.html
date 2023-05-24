@@ -1,7 +1,25 @@
-<div class="container-fluid row overflow-x-scroll">
-    <div *ngFor="let post of posts">
-        <div class="">
+<div class="item">
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+        <button *ngFor="let post of posts; let i = index" type="button" data-bs-target="#carouselExampleCaptions"
+            [attr.data-bs-slide-to]="i" aria-current="true" aria-label="..." [ngClass]="{'active': i == 0}">
+        </button>
+    </div>
+
+    <div class="carousel-inner">
+        <div *ngFor="let post of posts; let i = index" class="carousel-item" [ngClass]="{'active': i == 0}">
             <app-post [post]="post"></app-post>
         </div>
     </div>
-</div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+ 
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+    </button>
+
+</div></div>

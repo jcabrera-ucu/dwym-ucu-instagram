@@ -1,0 +1,9 @@
+.item{
+    display: flex;
+    padding: 10px;
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+
+}

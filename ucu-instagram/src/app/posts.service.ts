@@ -20,7 +20,7 @@ export class PostsService {
         }
       },
       {
-        image: 'assets/post1.jpeg',
+        image: 'assets/foto2.jpg',
         user: {
           firstName: 'Juan',
           lastName: 'Cabrera',

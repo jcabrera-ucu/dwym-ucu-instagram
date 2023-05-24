@@ -8,4 +8,7 @@ import { Post } from '../post';
 })
 export class PostComponent {
   @Input() post!: Post;
+  
 }
+
+
