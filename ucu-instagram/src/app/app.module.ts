@@ -1,13 +1,19 @@
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { PostContainerComponent } from './post-container/post-container.component';
 import { PostComponent } from './post/post.component';
-import { FormsModule } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { UploadComponent } from './upload/upload.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { MAT_DIALOG_DEFAULT_OPTIONS } from "@angular/material/dialog";
+import {MatDialogModule} from "@angular/material/dialog";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -15,15 +21,22 @@ import { FormsModule } from '@angular/forms';
     NavComponent,
     PostContainerComponent,
     PostComponent,
-  
-
+    UploadComponent,
+    ProfilePageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    MatIconModule,
+    MatButtonModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+    MatCardModule,
   ],
-  providers: [],
+  providers: [
+    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

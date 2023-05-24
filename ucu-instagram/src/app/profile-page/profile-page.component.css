@@ -1,0 +1,40 @@
+.name {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-size: 36px;
+}
+
+.location {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    
+}
+
+img {
+    height: 5em;
+    width: 5em;
+}
+
+.profile-picture {
+    width: 10em;
+    height: 10em;
+}
+
+.btn-follow {
+    background: #000000;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.btn-message {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 13px;
+}

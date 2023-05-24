@@ -1,25 +1,21 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
+<nav>
+  <button mat-button id="profile" [class]="selected === 'profile' ? 'selected' : ''" (click)="navigate('profile')">
+    <mat-icon>person_outline</mat-icon>Profile
+  </button>
+
+  <button mat-button id="chat" [class]="selected === 'chat' ? 'selected' : ''" (click)="navigate('chat')">
+    <mat-icon>chat_bubble_outline</mat-icon>Chat
+  </button>
+
+  <button mat-button id="upload" [class]="selected === 'upload' ? 'selected' : ''" (click)="upload()">
+    <mat-icon>add</mat-icon>Upload Picture
+  </button>
+
+  <button mat-button id="search" [class]="selected === 'search' ? 'selected' : ''" (click)="navigate('search')">
+    <mat-icon>search</mat-icon>Search
+  </button>
+
+  <button mat-button id="discover" [class]="selected === 'discover' ? 'selected' : ''" (click)="navigate('discover')">
+    <mat-icon>home</mat-icon>Discover
+  </button>
+</nav>

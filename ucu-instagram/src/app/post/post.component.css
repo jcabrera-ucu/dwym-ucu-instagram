@@ -1,7 +1,27 @@
+mat-card {
+  /* box-shadow: none;
+  padding-top: 60px; */
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 40px auto;
+  width: 77%;
+}
+mat-card-header {
+  padding-left: 0;
+}
+
+mat-card-title {
+  padding-top: 5px !important;
+  font-weight: bold;
+  font-size: .75rem;
+}
+
+mat-card-subtitle {
+  padding-top: 5px !important;
+  font-size: .7rem;
+}
 .picture {
-    height: 250px;
-
-    width: 100%;
-
-    object-fit: cover;
+  object-fit: cover;
+  width:500px;
+  height:600px;
 }

@@ -1,0 +1,48 @@
+.general {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 23%;
+    padding: 10px;
+    margin-left: 85%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.cross{
+    margin-right: auto;
+    color: gray;
+}
+
+.selectFile {
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    background: linear-gradient(202.17deg, #866981 8.58%, #FF4D00 91.42%, #584740 91.42%);
+    color: white;
+}
+
+input {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    width: 100%;
+    height: 365px;
+    margin-top: 3%;
+    text-align: left;
+    vertical-align: top;
+
+}
+
+.upload {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(202.17deg, #FF00D6 8.58%, #FF4D00 91.42%);
+    border-radius: 20px;
+    margin-top: 3%;
+    color: white;
+}
