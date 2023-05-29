@@ -1,21 +1,21 @@
 <nav>
-  <button mat-button id="profile" [class]="selected === 'profile' ? 'selected' : ''" (click)="navigate('profile')">
+  <button mat-button id="profile" [ngClass]="{selected: selected === 'profile'}" (click)="navigate('profile')">
     <mat-icon>person_outline</mat-icon>Profile
   </button>
 
-  <button mat-button id="chat" [class]="selected === 'chat' ? 'selected' : ''" (click)="navigate('chat')">
+  <button mat-button id="chat" [ngClass]="{selected: selected === 'chat'}" (click)="navigate('chat')">
     <mat-icon>chat_bubble_outline</mat-icon>Chat
   </button>
 
-  <button mat-button id="upload" [class]="selected === 'upload' ? 'selected' : ''" (click)="upload()">
+  <button mat-button id="upload" [ngClass]="{selected: selected === 'upload'}" (click)="upload()">
     <mat-icon>add</mat-icon>Upload Picture
   </button>
 
-  <button mat-button id="search" [class]="selected === 'search' ? 'selected' : ''" (click)="navigate('search')">
+  <button mat-button id="search" [ngClass]="{selected: selected === 'search'}" (click)="navigate('search')">
     <mat-icon>search</mat-icon>Search
   </button>
 
-  <button mat-button id="discover" [class]="selected === 'discover' ? 'selected' : ''" (click)="navigate('discover')">
+  <button mat-button id="discover" [ngClass]="{selected: selected === 'discover'}" (click)="navigate('discover')">
     <mat-icon>home</mat-icon>Discover
   </button>
 </nav>
