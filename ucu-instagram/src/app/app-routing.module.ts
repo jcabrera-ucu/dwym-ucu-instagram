@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: "upload", component: UploadComponent },
   { path: "discover", component: PostContainerComponent },
   { path: "profile", component: ProfilePageComponent },
-  { path: "**", redirectTo: "discover" }
+  { path: "**", redirectTo: "discover" },
 ];
 
 @NgModule({
