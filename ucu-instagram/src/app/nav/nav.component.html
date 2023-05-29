@@ -1,21 +1,26 @@
 <nav>
   <button mat-button id="profile" [class]="selected === 'profile' ? 'selected' : ''" (click)="navigate('profile')">
-    <mat-icon>person_outline</mat-icon>Profile
+    <mat-icon>person_outline</mat-icon>
+    <span>Profile</span>
   </button>
 
   <button mat-button id="chat" [class]="selected === 'chat' ? 'selected' : ''" (click)="navigate('chat')">
-    <mat-icon>chat_bubble_outline</mat-icon>Chat
+    <mat-icon>chat_bubble_outline</mat-icon>
+    <span>Chat</span>
   </button>
 
   <button mat-button id="upload" [class]="selected === 'upload' ? 'selected' : ''" (click)="upload()">
-    <mat-icon>add</mat-icon>Upload Picture
+    <mat-icon>add</mat-icon>
+    <span>Upload Picture</span>
   </button>
 
   <button mat-button id="search" [class]="selected === 'search' ? 'selected' : ''" (click)="navigate('search')">
-    <mat-icon>search</mat-icon>Search
+    <mat-icon>search</mat-icon>
+    <span>Search</span>
   </button>
 
   <button mat-button id="discover" [class]="selected === 'discover' ? 'selected' : ''" (click)="navigate('discover')">
-    <mat-icon>home</mat-icon>Discover
+    <mat-icon>home</mat-icon>
+    <span>Discover</span>
   </button>
 </nav>
