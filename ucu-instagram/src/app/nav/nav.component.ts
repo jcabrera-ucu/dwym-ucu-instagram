@@ -40,17 +40,13 @@ export class NavComponent {
   upload() {
     const previousSelected = this.selected;
     this.selected = "upload";
-    const config: MatDialogConfig = {
+    const ref = this.dialog.open(UploadComponent, {
       hasBackdrop: true,
       position: {
         right: '0px',
-        // top: '5px',
       },
-      // height: '100vh',
-      // maxHeight: '100vh',
-      // minHeight: '100vh'
-    };
-    const ref = this.dialog.open(UploadComponent, config);
+    });
+
     ref.afterClosed().subscribe((closedFromButton: boolean) => {
       if (closedFromButton) {
         this.selected = previousSelected;
