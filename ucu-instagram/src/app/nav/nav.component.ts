@@ -22,6 +22,8 @@ export class NavComponent {
 
   showChat = false;
 
+  uploadDialogOpened = false;
+
   constructor(private router: Router, private dialog: MatDialog, private chatService: ChatService) {
     this.chatService.displayChat.subscribe((value: boolean) => {
       this.showChat = value;
@@ -39,11 +41,16 @@ export class NavComponent {
   upload() {
     const previousSelected = this.selected;
     this.selected = "upload";
+    if (this.uploadDialogOpened) {
+      return;
+    }
+    this.uploadDialogOpened = true;
     const ref = this.dialog.open(UploadComponent);
     ref.afterClosed().subscribe((closedFromButton: boolean) => {
       if (closedFromButton) {
         this.selected = previousSelected;
       }
+      this.uploadDialogOpened = false;
     });
   }
 
