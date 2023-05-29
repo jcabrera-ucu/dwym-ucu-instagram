@@ -5,6 +5,7 @@ mat-card {
   flex-wrap: nowrap;
   margin: 40px auto;
   width: 77%;
+  
 }
 mat-card-header {
   padding-left: 0;
@@ -19,9 +20,4 @@ mat-card-title {
 mat-card-subtitle {
   padding-top: 5px !important;
   font-size: .7rem;
-}
-.picture {
-  object-fit: cover;
-  width:500px;
-  height:600px;
 }

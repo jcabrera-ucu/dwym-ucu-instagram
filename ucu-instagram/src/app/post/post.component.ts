@@ -8,17 +8,7 @@ import { Post } from '../post';
 })
 export class PostComponent {
   @Input() post!: Post;
-arr: any[]=[];
 
-  llnear(){
-
-      this.arr.push(this.post.image);
-
-   
-  }
-  ngOnInit(){
-    this.llnear();
-  }
 }
 
 
