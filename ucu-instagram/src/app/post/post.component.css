@@ -7,7 +7,7 @@ mat-card {
   height: 100%;
 }
 
-img {
+mat-card > img {
   height: calc(90% - 4px);
 }
 
