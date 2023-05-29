@@ -13,7 +13,9 @@ export class NavComponent {
 
   selected: "discover" | "search" | "upload" | "chat" | "profile" = "discover";
 
-  constructor(private router: Router, private dialog: MatDialog) {
+  showChat = false;
+
+  constructor(private router: Router, private dialog: MatDialog, private chatService: ChatService) {
   }
 
   navigate(newView: "discover" | "search" | "upload" | "chat" | "profile") {
