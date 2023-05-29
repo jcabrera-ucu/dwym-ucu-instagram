@@ -1,0 +1,27 @@
+.discoverTitle {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    margin-left: 2%;
+    margin-top: 3%;
+    
+}
+
+.discoverSubtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-left: 2%;
+    margin-top: 3%;
+}
