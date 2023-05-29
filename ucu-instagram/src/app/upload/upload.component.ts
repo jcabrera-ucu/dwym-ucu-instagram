@@ -9,9 +9,4 @@ import { MatDialogRef } from '@angular/material/dialog';
 export class UploadComponent {
   constructor(private dialogRef: MatDialogRef<UploadComponent>,) {
   }
-
-  close() {
-    this.dialogRef.close(true);
-  }
-
 }

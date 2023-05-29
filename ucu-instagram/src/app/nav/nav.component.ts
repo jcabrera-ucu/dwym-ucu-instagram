@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { UploadComponent } from '../upload/upload.component';
 import { SearchComponent } from '../search/search.component';
 import { ChatService } from '../chat.service';
@@ -40,7 +40,17 @@ export class NavComponent {
   upload() {
     const previousSelected = this.selected;
     this.selected = "upload";
-    const ref = this.dialog.open(UploadComponent);
+    const config: MatDialogConfig = {
+      hasBackdrop: true,
+      position: {
+        right: '0px',
+        // top: '5px',
+      },
+      // height: '100vh',
+      // maxHeight: '100vh',
+      // minHeight: '100vh'
+    };
+    const ref = this.dialog.open(UploadComponent, config);
     ref.afterClosed().subscribe((closedFromButton: boolean) => {
       if (closedFromButton) {
         this.selected = previousSelected;
