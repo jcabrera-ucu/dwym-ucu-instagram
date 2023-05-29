@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { UploadComponent } from '../upload/upload.component';
+import { ChatService } from '../chat.service';
 
 @Component({
   selector: 'app-nav',
@@ -12,7 +13,12 @@ export class NavComponent {
 
   selected: "discover" | "search" | "upload" | "chat" | "profile" = "discover";
 
-  constructor(private router: Router, private dialog: MatDialog) {
+  showChat = false;
+
+  constructor(private router: Router, private dialog: MatDialog, private chatService: ChatService) {
+    this.chatService.displayChat.subscribe((value: boolean) => {
+      this.showChat = value;
+    });
   }
 
   navigate(newView: "discover" | "search" | "upload" | "chat" | "profile") {
@@ -32,5 +38,9 @@ export class NavComponent {
         this.selected = previousSelected;
       }
     });
+  }
+
+  toggleChat() {
+    this.chatService.toggleChat();
   }
 }
