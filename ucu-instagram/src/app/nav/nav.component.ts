@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { UploadComponent } from '../upload/upload.component';
 import { SearchComponent } from '../search/search.component';
 import { ChatService } from '../chat.service';
