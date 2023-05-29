@@ -1,0 +1,69 @@
+.chat-overlay {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 25%;
+    height: 80%;
+    z-index: 1000;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h5{
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    
+}
+
+.chat-container {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.chat-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-top: 1px solid #ccc;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+h6 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+    color: #888;
+}
