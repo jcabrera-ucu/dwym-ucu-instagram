@@ -1,21 +1,28 @@
+.post-container {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  justify-content: center;
+  overflow-x: scroll;
+  gap: 20px;
+}
 
-.post-container{
-    display: flex;
-    margin: auto;
-    flex-direction: row;
-    justify-content: center;
-    overflow-x:scroll;
+h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: auto;
+  margin-left: 40px;
+}
 
+h6 {
+  margin: auto;
+  margin-left: 40px;
 }
-h1{
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-margin: auto;
-margin-left: 40px;
+
+app-post {
+  height: 500px;
+  width: 500px;
 }
-h6{
-    margin: auto;
-margin-left: 40px;
-}
+
 .discoverTitle {
     font-family: 'Comfortaa';
     font-style: normal;
