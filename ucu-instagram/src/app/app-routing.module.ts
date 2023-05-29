@@ -7,7 +7,7 @@ import { PostContainerComponent } from './post-container/post-container.componen
 const routes: Routes = [
   {path: "upload", component: UploadComponent},
   {path: "discover", component: PostContainerComponent},
-  {path: "**", redirectTo: "discover"}
+  {path: "**", redirectTo: "discover"},
 ];
 
 @NgModule({
