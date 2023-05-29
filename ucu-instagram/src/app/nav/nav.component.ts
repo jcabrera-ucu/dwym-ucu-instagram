@@ -16,6 +16,9 @@ export class NavComponent {
   showChat = false;
 
   constructor(private router: Router, private dialog: MatDialog, private chatService: ChatService) {
+    this.chatService.displayChat.subscribe((value: boolean) => {
+      this.showChat = value;
+    });
   }
 
   navigate(newView: "discover" | "search" | "upload" | "chat" | "profile") {
