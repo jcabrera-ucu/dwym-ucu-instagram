@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
@@ -7,6 +7,9 @@ import { MatDialogRef } from '@angular/material/dialog';
   styleUrls: ['./upload.component.css']
 })
 export class UploadComponent {
-  constructor(private dialogRef: MatDialogRef<UploadComponent>,) {
+  @ViewChild("fileInput") fileInput !: ElementRef;
+
+  selectFile() {
+    this.fileInput.nativeElement.click();
   }
 }

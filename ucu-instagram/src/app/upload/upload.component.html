@@ -5,7 +5,8 @@
             <mat-icon>disabled_by_default</mat-icon>
         </button>
     </h1>
-    <button class="selectFile">Select file...</button>
+    <input #fileInput type="file" accept=".jpeg,.jpg,.png,.bmp,.svg">
+    <button class="selectFile" (click)="selectFile()">Select file...</button>
     <textarea placeholder="Type description"></textarea>
     <button class="upload">Upload</button>
 </div> 
