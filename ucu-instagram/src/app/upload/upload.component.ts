@@ -7,11 +7,11 @@ import { MatDialogRef } from '@angular/material/dialog';
   styleUrls: ['./upload.component.css']
 })
 export class UploadComponent {
-  constructor(private dialogRef: MatDialogRef<UploadComponent>,){
+  constructor(private dialogRef: MatDialogRef<UploadComponent>,) {
+  }
 
+  close() {
+    this.dialogRef.close(true);
   }
-  close(){
-    this.dialogRef.close();
-  }
-  
+
 }
