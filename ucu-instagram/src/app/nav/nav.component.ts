@@ -11,6 +11,8 @@ type NavTabs =
   | "upload"
   | "chat"
   | "profile";
+import { SearchComponent } from '../search/search.component';
+
 
 @Component({
   selector: 'app-nav',
