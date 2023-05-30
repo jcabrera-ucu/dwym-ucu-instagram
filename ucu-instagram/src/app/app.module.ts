@@ -13,6 +13,7 @@ import { MAT_DIALOG_DEFAULT_OPTIONS } from "@angular/material/dialog";
 import {MatDialogModule} from "@angular/material/dialog";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from "@angular/material/card";
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MatCardModule } from "@angular/material/card";
     PostComponent,
     UploadComponent,
     ProfilePageComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,

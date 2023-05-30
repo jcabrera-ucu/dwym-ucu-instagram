@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { UploadComponent } from '../upload/upload.component';
+import { SearchComponent } from '../search/search.component';
+
 
 @Component({
   selector: 'app-nav',
