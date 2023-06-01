@@ -14,7 +14,9 @@ import { MAT_DIALOG_DEFAULT_OPTIONS } from "@angular/material/dialog";
 import {MatDialogModule} from "@angular/material/dialog";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from "@angular/material/card";
+import { SearchComponent } from './search/search.component';
 import { ChatOverlayComponent } from './chat-overlay/chat-overlay.component';
+
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { ChatOverlayComponent } from './chat-overlay/chat-overlay.component';
     PostComponent,
     UploadComponent,
     ProfilePageComponent,
+    SearchComponent,
     ChatOverlayComponent,
   ],
   imports: [

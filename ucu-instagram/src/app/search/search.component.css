@@ -1,0 +1,16 @@
+.searchClass {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+}
+
+.inputClass {
+    width: 98%;
+    padding: 8px;
+    margin: 1%;
+}
