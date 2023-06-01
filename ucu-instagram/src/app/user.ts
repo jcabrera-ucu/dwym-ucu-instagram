@@ -4,4 +4,5 @@ export interface User {
     lastName: string;
     location: string;
     handle: string;
+    tag: string;
 }

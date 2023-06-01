@@ -14,7 +14,8 @@ export class PostsService {
         lastName: 'Cabrera',
         profilePicture: '',
         location: 'Uruguay',
-        handle: '@juancho'
+        handle: '@juancho',
+        tag: 'men'
       }
     },
     {
@@ -24,7 +25,8 @@ export class PostsService {
         lastName: 'Cabrera',
         profilePicture: '',
         location: 'Uruguay',
-        handle: '@juancho'
+        handle: '@juancho',
+        tag: 'men'
       }
     },
     {
@@ -34,7 +36,8 @@ export class PostsService {
         lastName: 'Hathaway',
         profilePicture: '',
         location: 'San Francisco, CA',
-        handle: '@anne'
+        handle: '@anne',
+        tag: 'women'
       }
     },
     {
@@ -44,7 +47,8 @@ export class PostsService {
         lastName: 'Hathaway',
         profilePicture: '',
         location: 'San Francisco, CA',
-        handle: '@anne'
+        handle: '@anne',
+        tag: 'women'
       }
     },
     {
@@ -54,7 +58,8 @@ export class PostsService {
         lastName: 'Hathaway',
         profilePicture: '',
         location: 'San Francisco, CA',
-        handle: '@anne'
+        handle: '@anne',
+        tag: 'women'
       }
     },
     {
@@ -64,7 +69,8 @@ export class PostsService {
         lastName: 'Hathaway',
         profilePicture: '',
         location: 'San Francisco, CA',
-        handle: '@anne'
+        handle: '@anne',
+        tag: 'women'
       }
     }
   ]
@@ -78,3 +84,5 @@ export class PostsService {
     return this.POST.filter((post) => post.user.firstName === name);
   }
 }
+
+

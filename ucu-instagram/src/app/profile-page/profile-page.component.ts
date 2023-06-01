@@ -21,7 +21,5 @@ export class ProfilePageComponent {
         this.posts = posts;
       })
     });
-
-
   }
 }
