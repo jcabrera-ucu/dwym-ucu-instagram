@@ -1,20 +1,22 @@
 import { Component } from '@angular/core';
-import { PostsService } from '../posts.service';
 import { Post } from '../post';
+import { PostsService } from '../posts.service';
+import { NgFor } from '@angular/common';
+declare const $:any;
 
 @Component({
   selector: 'app-post-container',
   templateUrl: './post-container.component.html',
-  styleUrls: ['./post-container.component.css']
+  styleUrls: ['./post-container.component.css'],
 })
 export class PostContainerComponent {
-
   posts: Post[] = [];
 
   constructor(private postsService: PostsService) {
-    postsService.getAllPosts().then(posts => {
-      this.posts = posts;
-      console.log(this.posts);
-    })
-  }
+     postsService.getAllPosts().then(posts => {
+       this.posts = posts;
+     
+     })
+   }
+
 }

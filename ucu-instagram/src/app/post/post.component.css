@@ -1,7 +1,12 @@
 mat-card {
-  box-shadow: none;
+  /* box-shadow: none;
+  padding-top: 60px; */
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 40px auto;
+  width: 77%;
+  
 }
-
 mat-card-header {
   padding-left: 0;
 }

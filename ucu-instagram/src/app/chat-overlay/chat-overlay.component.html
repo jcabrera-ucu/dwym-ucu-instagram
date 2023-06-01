@@ -1,0 +1,15 @@
+<div class="chat-overlay">
+    <div class="head">
+        <button class="close" (click)="chatService.toggleChat()">&#10005;</button>
+        <h5>Bottom Right Page</h5>
+    </div>   
+    <div class="chat-container">
+        <div *ngFor="let chat of chats" class="chat-card">
+            <img [src]="chat.profilePicture" class="profile-picture" alt="Profile Picture">
+            <div>
+                <h6>{{chat.username}}</h6>
+                <p>{{chat.lastMessage}}</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +15,8 @@ import {MatDialogModule} from "@angular/material/dialog";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from "@angular/material/card";
 import { SearchComponent } from './search/search.component';
+import { ChatOverlayComponent } from './chat-overlay/chat-overlay.component';
+
 
 @NgModule({
   declarations: [
@@ -24,6 +27,7 @@ import { SearchComponent } from './search/search.component';
     UploadComponent,
     ProfilePageComponent,
     SearchComponent,
+    ChatOverlayComponent,
   ],
   imports: [
     BrowserModule,
