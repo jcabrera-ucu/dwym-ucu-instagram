@@ -2,7 +2,15 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { UploadComponent } from '../upload/upload.component';
+import { SearchComponent } from '../search/search.component';
 import { ChatService } from '../chat.service';
+
+type NavTabs =
+  | "discover"
+  | "search"
+  | "upload"
+  | "chat"
+  | "profile";
 
 @Component({
   selector: 'app-nav',
@@ -11,7 +19,7 @@ import { ChatService } from '../chat.service';
 })
 export class NavComponent {
 
-  selected: "discover" | "search" | "upload" | "chat" | "profile" = "discover";
+  selected: NavTabs = "discover";
 
   showChat = false;
 
@@ -21,7 +29,7 @@ export class NavComponent {
     });
   }
 
-  navigate(newView: "discover" | "search" | "upload" | "chat" | "profile") {
+  navigate(newView: NavTabs) {
     this.dialog.closeAll();
     this.selected = newView;
     if (newView === "discover" || newView === "search" || newView === "profile") {

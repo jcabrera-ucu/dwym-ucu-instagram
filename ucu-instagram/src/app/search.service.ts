@@ -16,10 +16,7 @@ export class SearchService {
 
   }
 
-  
-
   async getPostsByTag(tag: string): Promise<Post[]> {
     return this.posts.filter((post) => post.user.tag === tag);
-
   }
 }

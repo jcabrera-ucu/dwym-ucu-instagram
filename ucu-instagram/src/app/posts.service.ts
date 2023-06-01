@@ -15,20 +15,10 @@ export class PostsService {
         profilePicture: '',
         location: 'Uruguay',
         handle: '@juancho',
-        tag: 'men'
+        tag: 'hotdog'
       }
     },
-    {
-      image: 'assets/post1.jpeg',
-      user: {
-        firstName: 'Juan',
-        lastName: 'Cabrera',
-        profilePicture: '',
-        location: 'Uruguay',
-        handle: '@juancho',
-        tag: 'men'
-      }
-    },
+
     {
       image: 'https://hips.hearstapps.com/hmg-prod/images/anne-hathaway-attends-the-2023-met-gala-celebrating-karl-news-photo-1682989632.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*',
       user: {
@@ -83,6 +73,7 @@ export class PostsService {
   async getPostsByName(name: string): Promise<Post[]> {
     return this.POST.filter((post) => post.user.firstName === name);
   }
+
 }
 
 
