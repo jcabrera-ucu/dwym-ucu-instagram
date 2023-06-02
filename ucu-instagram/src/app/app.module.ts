@@ -17,6 +17,7 @@ import { MatCardModule } from "@angular/material/card";
 import { SearchComponent } from './search/search.component';
 import { ChatOverlayComponent } from './chat-overlay/chat-overlay.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,7 @@ import { ChatOverlayComponent } from './chat-overlay/chat-overlay.component';
     UploadComponent,
     ProfilePageComponent,
     SearchComponent,
-    ChatOverlayComponent
+    ChatOverlayComponent,
   ],
   imports: [
     BrowserModule,
