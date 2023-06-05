@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { ChatService } from '../chat.service';
 
 @Component({
-  
   selector: 'app-chat-overlay',
   templateUrl: './chat-overlay.component.html',
   styleUrls: ['./chat-overlay.component.css']
@@ -43,6 +42,4 @@ export class ChatOverlayComponent {
       profilePicture: "https://picsum.photos/204"
     }
   ];
-  
-
 }
