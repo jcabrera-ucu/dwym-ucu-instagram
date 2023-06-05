@@ -47,10 +47,8 @@ export class NavComponent {
       },
     });
 
-    ref.afterClosed().subscribe((closedFromButton: boolean) => {
-      if (closedFromButton) {
-        this.selected = previousSelected;
-      }
+    ref.afterClosed().subscribe((_closedFromButton: boolean) => {
+      this.selected = previousSelected;
     });
   }
 
