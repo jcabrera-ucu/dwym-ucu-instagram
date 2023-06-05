@@ -11,12 +11,13 @@ export class UserService {
     firstName: 'Anne',
     lastName: 'Hathaway',
     location: 'San Francisco, CA',
-    handle: '@anne'
+    handle: '@anne',
+    tag: 'women'
   }
 
   constructor() { }
 
-  async getUser(): Promise<User>{
+  async getUser(): Promise<User> {
     return this.USER;
   }
 }

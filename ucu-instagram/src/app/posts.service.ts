@@ -14,10 +14,11 @@ export class PostsService {
         lastName: 'Cabrera',
         profilePicture: '',
         location: 'Uruguay',
-        handle: '@juancho'
+        handle: '@juancho',
+        tag: 'hotdog'
       }
     },
-   
+
     {
       image: 'https://hips.hearstapps.com/hmg-prod/images/anne-hathaway-attends-the-2023-met-gala-celebrating-karl-news-photo-1682989632.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*',
       user: {
@@ -25,7 +26,8 @@ export class PostsService {
         lastName: 'Hathaway',
         profilePicture: '',
         location: 'San Francisco, CA',
-        handle: '@anne'
+        handle: '@anne',
+        tag: 'women'
       }
     },
     {
@@ -35,7 +37,8 @@ export class PostsService {
         lastName: 'Hathaway',
         profilePicture: '',
         location: 'San Francisco, CA',
-        handle: '@anne'
+        handle: '@anne',
+        tag: 'women'
       }
     },
     {
@@ -45,7 +48,8 @@ export class PostsService {
         lastName: 'Hathaway',
         profilePicture: '',
         location: 'San Francisco, CA',
-        handle: '@anne'
+        handle: '@anne',
+        tag: 'women'
       }
     },
     {
@@ -55,7 +59,8 @@ export class PostsService {
         lastName: 'Hathaway',
         profilePicture: '',
         location: 'San Francisco, CA',
-        handle: '@anne'
+        handle: '@anne',
+        tag: 'women'
       }
     }
   ]
@@ -68,5 +73,7 @@ export class PostsService {
   async getPostsByName(name: string): Promise<Post[]> {
     return this.POST.filter((post) => post.user.firstName === name);
   }
-  
+
 }
+
+

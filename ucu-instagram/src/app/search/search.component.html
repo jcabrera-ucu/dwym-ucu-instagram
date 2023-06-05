@@ -1,2 +1,10 @@
 <h1 class="searchClass">Search</h1>
-<input class="inputClass"type="text">
+<input class="inputClass" type="text" id="searchInput" (input)="onInput($event)">
+
+<p class = "allResults" *ngIf="showAllResults">ALL RESULTS </p>
+
+<div class="generalSeccion">
+    <div class="IndividualPost" *ngFor="let photo of postsByTag">
+        <img [src]="photo.image" alt="">
+    </div>
+</div>
