@@ -8,6 +8,8 @@ import { ChatService } from '../chat.service';
 })
 export class ChatOverlayComponent {
   
+  pepito = true;
+
   constructor(public chatService: ChatService) { }
 
   chats = [
@@ -40,6 +42,41 @@ export class ChatOverlayComponent {
       lastMessage: "Up",
       username: "John Clark",
       profilePicture: "https://picsum.photos/204"
-    }
+    },
+    {
+      id: 6,
+      lastMessage: "You",
+      username: "Jane Smith",
+      profilePicture: "https://picsum.photos/203"
+    },
+    {
+      id: 7,
+      lastMessage: "You",
+      username: "Jane Smith",
+      profilePicture: "https://picsum.photos/203"
+    },
+    {
+      id: 8,
+      lastMessage: "You",
+      username: "Jane Smith",
+      profilePicture: "https://picsum.photos/203"
+    },
+    {
+      id: 9,
+      lastMessage: "You",
+      username: "Jane Smith",
+      profilePicture: "https://picsum.photos/203"
+    },
+    {
+      id: 10,
+      lastMessage: "You",
+      username: "Jane Smith",
+      profilePicture: "https://picsum.photos/203"
+    },
   ];
+
+  theChat() {
+    this.pepito = !this.pepito;
+
+  }
 }

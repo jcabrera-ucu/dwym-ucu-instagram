@@ -64,6 +64,7 @@ export class NavComponent {
       // width: '500px',
       position: {
         right: '0px',
+        bottom: '0px',
       },
     });
 

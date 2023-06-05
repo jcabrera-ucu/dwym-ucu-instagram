@@ -7,13 +7,18 @@
             <mat-icon>disabled_by_default</mat-icon>
         </button>
     </div>
-    <div class="chat-container">
-        <div *ngFor="let chat of chats" class="chat-card">
+    <div class="chat-container" *ngIf="pepito" >
+        <div *ngFor="let chat of chats" class="chat-card" (click) = "theChat()" >
             <img [src]="chat.profilePicture" class="profile-picture" alt="Profile Picture">
             <div>
                 <h6>{{chat.username}}</h6>
                 <p>{{chat.lastMessage}}</p>
             </div>
+        </div>
+    </div>
+    <div class="chat-container" *ngIf="!pepito">
+        <div class="chat-messages">
+            <!-- <div *ngFor="let message of messages" class="message">{{ message }}</div> -->
         </div>
     </div>
 </div>
