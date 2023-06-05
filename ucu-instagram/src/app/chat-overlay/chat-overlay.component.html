@@ -1,8 +1,12 @@
 <div class="chat-overlay">
-    <div class="head">
-        <button class="close" (click)="chatService.toggleChat()">&#10005;</button>
-        <h5>Bottom Right Page</h5>
-    </div>   
+    <div class="d-flex justify-content-between align-items-center my-3">
+        <span></span>
+        <h5>Chats</h5>
+        <!-- <button class="close" (click)="chatService.toggleChat()">&#10005;</button> -->
+        <button mat-dialog-close mat-icon-button class="cross">
+            <mat-icon>disabled_by_default</mat-icon>
+        </button>
+    </div>
     <div class="chat-container">
         <div *ngFor="let chat of chats" class="chat-card">
             <img [src]="chat.profilePicture" class="profile-picture" alt="Profile Picture">
