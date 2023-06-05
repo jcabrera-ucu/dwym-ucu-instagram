@@ -40,11 +40,15 @@ export class NavComponent {
   upload() {
     const previousSelected = this.selected;
     this.selected = "upload";
-    const ref = this.dialog.open(UploadComponent);
-    ref.afterClosed().subscribe((closedFromButton: boolean) => {
-      if (closedFromButton) {
-        this.selected = previousSelected;
-      }
+    const ref = this.dialog.open(UploadComponent, {
+      hasBackdrop: true,
+      position: {
+        right: '0px',
+      },
+    });
+
+    ref.afterClosed().subscribe((_closedFromButton: boolean) => {
+      this.selected = previousSelected;
     });
   }
 

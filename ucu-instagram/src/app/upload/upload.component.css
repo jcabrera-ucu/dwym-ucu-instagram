@@ -1,20 +1,18 @@
 .general {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 23%;
     padding: 10px;
-    margin-left: 85%;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3%;
 }
 
-.cross{
-    margin-right: auto;
+input[type="file"] {
+    display: none;
+}
+
+.cross {
+    margin-left: 2em;
     color: gray;
 }
 
@@ -26,7 +24,7 @@
     color: white;
 }
 
-input {
+textarea {
     box-sizing: border-box;
     background: #FFFFFF;
     border: 2px solid #000000;
@@ -35,7 +33,7 @@ input {
     margin-top: 3%;
     text-align: left;
     vertical-align: top;
-
+    resize: none;
 }
 
 .upload {

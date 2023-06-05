@@ -1,7 +1,12 @@
 <div class="general">
-    <button (click)="close()" mat-icon-button class="cross"><mat-icon>disabled_by_default</mat-icon></button>
-    <h1 class="title">Upload picture</h1>
-    <button class="selectFile">Select file...</button>
-    <input type="text" placeholder="Type description">
+    <h1 class="title">
+        Upload Picture
+        <button mat-dialog-close mat-icon-button class="cross">
+            <mat-icon>disabled_by_default</mat-icon>
+        </button>
+    </h1>
+    <input #fileInput type="file" accept=".jpeg,.jpg,.png,.bmp,.svg">
+    <button class="selectFile" (click)="selectFile()">Select file...</button>
+    <textarea placeholder="Type description"></textarea>
     <button class="upload">Upload</button>
-</div>
+</div> 
